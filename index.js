@@ -96,7 +96,7 @@ function mountHttpRequest(method, url, reqParams) {
     fetch: function _fetch() {
       var httpConnection
 
-      if (method.toUpperCase() === 'POST' || method.toUpperCase() === 'PUT') {
+      if (method.toUpperCase() === 'POST' || method.toUpperCase() === 'PUT' || method.toUpperCase() === 'DELETE') {
         var output
 
         httpConnection = new URL(url).openConnection()
